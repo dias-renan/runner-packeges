@@ -1,15 +1,14 @@
 name: Install
-
 on:
-  workflow_dispach:
+  workflow_dispatch:
 jobs:
   install:
-  runs-on: ubuntu-latest
-  steps:
-  - name: Instalação FFMPEG
-    run:
-      sudo apt update --yes
-      sudo apt install ffmpeg --yes
-  - name: Executar FFMPEG
-    run:
-      ffmpeg --help
+    runs-on: ubuntu-latest
+    steps:
+    - name: Instalação FFMPEG
+      run:
+        sudo apt update --yes
+        sudo apt install ffmpeg --yes
+    - name: Executar FFMPEG
+      run:
+        ffmpeg --help
