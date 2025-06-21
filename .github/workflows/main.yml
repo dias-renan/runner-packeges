@@ -7,8 +7,8 @@ jobs:
     steps:
     - name: Instalação FFMPEG
       run: |
-        sudo apt update --y
-        sudo apt install ffmpeg --y
+        sudo apt update -y
+        sudo apt install ffmpeg -y
     - name: Executar FFMPEG
       run:
         ffmpeg --help
